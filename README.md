@@ -16,7 +16,7 @@ sudo apt-get -y install python3-pip\
 pip3 install puremagic
 
 // Now we can run the project itself\
-// Open two shells, One for the server and one for the client\
+// Open two shells, One for the server and one for the client
 
 // On the first tab run the following command (Server runs forever so in order to kill when finished, use CTRL-C)\
 python3 Server.py
