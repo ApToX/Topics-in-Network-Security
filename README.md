@@ -2,7 +2,7 @@
  Mini Project at BGU in Network Security
 
 
-# Setup Instructions:
+## Setup Instructions:
 
 // Run the following commands inorder to run the project
 
