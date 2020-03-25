@@ -13,7 +13,7 @@ sudo apt-get install python3
 
 // Now we're going to install the necessary python packages\
 sudo apt-get -y install python3-pip\
-pip3 install puremagic\
+pip3 install puremagic
 
 // Now we can run the project itself\
 // Open two shells, One for the server and one for the client\
@@ -26,4 +26,4 @@ python3 Malicious_Client.py\
 // Or\
 python3 Suspicious_Client.py\
 // Or\
-python3 Normal_Client.py\
+python3 Normal_Client.py
