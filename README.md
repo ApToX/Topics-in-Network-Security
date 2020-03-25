@@ -28,7 +28,7 @@
 // On the second tab run one of the following commands (Depends on whice client you want to test)
 
 `python3 Malicious_Client.py`\
-// Or\
+or\
 `python3 Suspicious_Client.py`\
-// Or\
+or\
 `python3 Normal_Client.py`
