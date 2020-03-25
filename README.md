@@ -8,7 +8,7 @@
 
 // The following steps were done on Ubunutu Linux Virtual Machine
 
-// First we need to install Python 3 on the Linux machine
+// First we need to install Python 3 on the Linux machine \n
 sudo apt-get install python3
 
 // Now we're going to install the necessary python packages
