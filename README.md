@@ -4,16 +4,16 @@
 
 # Setup Instructions:
 
-// Run the following commands inorder to run the project
+// Run the following commands inorder to run the project &nbsp;
 
-// The following steps were done on Ubunutu Linux Virtual Machine
+// The following steps were done on Ubunutu Linux Virtual Machine &nbsp;
 
-// First we need to install Python 3 on the Linux machine \n
-sudo apt-get install python3
+// First we need to install Python 3 on the Linux machine &nbsp;
+sudo apt-get install python3 &nbsp;
 
-// Now we're going to install the necessary python packages
-sudo apt-get -y install python3-pip
-pip3 install puremagic
+// Now we're going to install the necessary python packages &nbsp;
+sudo apt-get -y install python3-pip &nbsp;
+pip3 install puremagic &nbsp;
 
 // Now we can run the project itself
 // Open two shells, One for the server and one for the client
