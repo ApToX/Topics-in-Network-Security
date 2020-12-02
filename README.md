@@ -1,5 +1,5 @@
-# Topics in Network Security - Email Server Antivirus
- Mini Project at BGU in Network Security.
+# Email Server Antivirus
+ The following project was implemnted during a "Mini" Project course at BGU in the subject of Network Security.
 
 
 ## Setup Instructions:
