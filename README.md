@@ -1,5 +1,5 @@
 # Email Server Antivirus
- The following project was implemented during a "Mini" Project course at BGU in the subject of Network Security. The project was in the subject of email server antivirus.
+ The following project was implemented during a "mini project" course at BGU in the subject of Network Security. The project focused on email server antivirus.
 
 
 ## Setup Instructions:
